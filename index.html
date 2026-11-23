@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MITHUN // ASCII Abyss</title>
+<meta name="description" content="An endless ASCII deep sea where the name MITHUN glows among living jellyfish, fish and currents.">
+<meta name="theme-color" content="#020716">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="scene" aria-label="Animated ASCII deep-sea scene with the name MITHUN"></canvas>
+<canvas id="glow" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+
+<div id="loader" role="status">
+  <pre id="boot"></pre>
+  <div id="bar"><span id="barfill"></span></div>
+  <div id="skip">tap or press any key to skip</div>
+</div>
+
+<div id="hud">
+  <button id="btn-pause" title="Pause / resume (Space)">❚❚ pause</button>
+  <button id="btn-regen" title="Regenerate scene (R)">↻ regenerate</button>
+  <button id="btn-fps" title="Toggle FPS monitor (F)">fps</button>
+</div>
+<div id="fps" hidden></div>
+
+<script src="js/util.js"></script>
+<script src="js/renderer.js"></script>
+<script src="js/world.js"></script>
+<script src="js/creatures.js"></script>
+<script src="js/title.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
